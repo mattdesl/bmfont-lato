@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "concat-stream": "^1.4.6",
-    "ndpack-image": "^1.0.4"
+    "ndpack-image": "1.0.4"
   },
   "devDependencies": {},
   "scripts": {
