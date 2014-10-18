@@ -1,0 +1,48 @@
+{
+  "name": "bmfont-lato",
+  "version": "1.0.0",
+  "description": "Lato as a BMFont JSON object",
+  "main": "regular-32.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "json-parse-stream": "0.0.2",
+    "ndpack-image": "^1.0.4"
+  },
+  "devDependencies": {
+    "through2": "^0.6.3"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "pack": "ndpack-image fnt/lato.png > image.js",
+    "regular-32": "bmfont2json fnt/Lato-Regular-32.fnt | module-exports | node ./transform.js > regular-32.js",
+    "regular-64": "bmfont2json fnt/Lato-Regular-64.fnt | module-exports | node ./transform.js > regular-64.js",
+    "bold-32": "bmfont2json fnt/Lato-Bold-32.fnt | module-exports | node ./transform.js > bold-32.js",
+    "bold-64": "bmfont2json fnt/Lato-Bold-64.fnt | module-exports | node ./transform.js > bold-64.js",
+    "fonts": "npm run regular-32 && npm run regular-64 && npm run bold-32 && npm run bold-64"
+  },
+  "keywords": [
+    "bmfont",
+    "angel",
+    "code",
+    "angelcode",
+    "font",
+    "fonts",
+    "text",
+    "type",
+    "bitmap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/bmfont-lato.git"
+  },
+  "homepage": "https://github.com/mattdesl/bmfont-lato",
+  "bugs": {
+    "url": "https://github.com/mattdesl/bmfont-lato/issues"
+  }
+}
