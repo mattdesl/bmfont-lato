@@ -21,9 +21,9 @@ console.log(Lato.chars)
 console.log(Lato.kernings)
 ```
 
-The `paths` and `images` array will have a length of 1. 
+Since all glyphs have been packed into a single image, the `paths` and `images` array will have a length of 1. 
 
-The image contains 4 fonts packed with [gdx-fontpack](https://github.com/mattdesl/gdx-fontpack), each of which can be required separately:
+The ndarray image contains 4 fonts packed with [gdx-fontpack](https://github.com/mattdesl/gdx-fontpack), each of which can be required separately:
 
 - `require('bmfont-lato/regular-32')`
 - `require('bmfont-lato/regular-64')`
@@ -45,7 +45,7 @@ See `package.json` scripts on how to build. You need these tools:
 Then:
 
 ```sh
-#first you need to build an atlas with BMFont or gdx-fontpack..
+#first you need to build an atlas with your tool of choice
 # ...
 
 #then pack it with ndpack-image
