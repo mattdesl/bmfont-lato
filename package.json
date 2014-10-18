@@ -1,6 +1,6 @@
 {
   "name": "bmfont-lato",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lato as a BMFont JSON object",
   "main": "regular-32.js",
   "license": "MIT",
@@ -13,8 +13,7 @@
     "concat-stream": "^1.4.6",
     "ndpack-image": "^1.0.4"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "node test.js",
     "pack": "ndpack-image fnt/lato.png > image.js",
