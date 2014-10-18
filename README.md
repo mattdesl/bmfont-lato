@@ -12,7 +12,7 @@ var Lato = require('bmfont-lato')
 //do something with the ndarrray image
 var shape = Lato.images[0].shape.slice(0, 3))
 
-//e.g. image shape is 750x512x4
+//e.g. image shape is 512x512x4
 console.log(shape)
 
 //BMFont fields..
@@ -23,14 +23,14 @@ console.log(Lato.kernings)
 
 Since all glyphs have been packed into a single image, the `paths` and `images` array will have a length of 1. 
 
-The ndarray image contains 4 fonts packed with [gdx-fontpack](https://github.com/mattdesl/gdx-fontpack), each of which can be required separately:
+The ndarray image contains 4 Lato Regular fonts packed with [gdx-fontpack](https://github.com/mattdesl/gdx-fontpack), each of which can be required separately:
 
-- `require('bmfont-lato/regular-32')`
-- `require('bmfont-lato/regular-64')`
-- `require('bmfont-lato/bold-32')`
-- `require('bmfont-lato/bold-64')`
+- `require('bmfont-lato/16')`
+- `require('bmfont-lato/24')`
+- `require('bmfont-lato/32')`
+- `require('bmfont-lato/64')`
 
-The default exported font is `regular-32` (the size is in px).
+The default exported font is `32` (the size is in px).
 
 ## Usage
 

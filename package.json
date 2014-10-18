@@ -2,7 +2,7 @@
   "name": "bmfont-lato",
   "version": "1.0.1",
   "description": "Lato as a BMFont JSON object",
-  "main": "regular-32.js",
+  "main": "./32.js",
   "license": "MIT",
   "author": {
     "name": "Matt DesLauriers",
@@ -17,11 +17,11 @@
   "scripts": {
     "test": "node test.js",
     "pack": "ndpack-image fnt/lato.png > image.js",
-    "regular-32": "bmfont2json fnt/Lato-Regular-32.fnt | module-exports | node ./transform.js > regular-32.js",
-    "regular-64": "bmfont2json fnt/Lato-Regular-64.fnt | module-exports | node ./transform.js > regular-64.js",
-    "bold-32": "bmfont2json fnt/Lato-Bold-32.fnt | module-exports | node ./transform.js > bold-32.js",
-    "bold-64": "bmfont2json fnt/Lato-Bold-64.fnt | module-exports | node ./transform.js > bold-64.js",
-    "fonts": "npm run regular-32 && npm run regular-64 && npm run bold-32 && npm run bold-64"
+    "font-16": "bmfont2json fnt/Lato-Regular-16.fnt | module-exports | node ./transform.js > 16.js",
+    "font-24": "bmfont2json fnt/Lato-Regular-24.fnt | module-exports | node ./transform.js > 24.js",
+    "font-32": "bmfont2json fnt/Lato-Regular-32.fnt | module-exports | node ./transform.js > 32.js",
+    "font-64": "bmfont2json fnt/Lato-Regular-64.fnt | module-exports | node ./transform.js > 64.js",
+    "fonts": "npm run font-16 && npm run font-24 && npm run font-32 && npm run font-64"
   },
   "keywords": [
     "bmfont",
