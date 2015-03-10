@@ -13,10 +13,14 @@
     "concat-stream": "^1.4.6",
     "ndpack-image": "1.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "datauri": "^0.6.0",
+    "quote-stream": "0.0.0"
+  },
   "scripts": {
     "test": "node test.js",
     "pack": "ndpack-image fnt/lato.png > image.js",
+    "image-uri": "datauri fnt/lato.png | quote-stream | module-exports > image-uri.js",
     "font-16": "bmfont2json fnt/Lato-Regular-16.fnt | module-exports | node ./transform.js > 16.js",
     "font-24": "bmfont2json fnt/Lato-Regular-24.fnt | module-exports | node ./transform.js > 24.js",
     "font-32": "bmfont2json fnt/Lato-Regular-32.fnt | module-exports | node ./transform.js > 32.js",

@@ -32,6 +32,12 @@ The ndarray image contains 4 Lato Regular fonts packed with [gdx-fontpack](https
 
 The default exported font is `32` (the size is in px).
 
+### URI
+
+You can also just grab the data URI like so:
+
+- `require('bmfont-lato/image-uri')
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/bmfont-lato.png)](https://nodei.co/npm/bmfont-lato/)
