@@ -1,6 +1,6 @@
 {
   "name": "bmfont-lato",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lato as a BMFont JSON object",
   "main": "./32.js",
   "license": "MIT",
