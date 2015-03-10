@@ -36,7 +36,7 @@ The default exported font is `32` (the size is in px).
 
 You can also just grab the data URI like so:
 
-- `require('bmfont-lato/image-uri')
+- `require('bmfont-lato/image-uri')`
 
 ## Usage
 
